@@ -4,6 +4,7 @@ import NavBar from './Components/Navbar/Navbar'
 import SideDrawer from './Components/SideDrawer/SideDrawer'
 import Backdrop from './Components/Backdrop/Backdrop'
 import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
+import { connect } from 'react-redux'
 
 class App extends React.Component {
 
@@ -27,4 +28,10 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+   return {
+    sideDrawerOpen: state.sideDrawerOpen
+   }
+}
+
+export default connect(mapStateToProps)(App);

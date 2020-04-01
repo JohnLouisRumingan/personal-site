@@ -11,7 +11,7 @@ const Navbar = () => {
             <nav className="toolbar_navigation">
                 <div><DrawerToggleButton /*click={this.props.drawerClickHandler}*/ /> </div>
                 <div className="spacer"></div>
-                <div className="toolbar_logo"><Link to='/'>BGmer</Link></div>
+                <div className="toolbar_logo"><Link to='/'>JMR</Link></div>
                 <div className="toolbar_navigation_items">
                     <ul>
                         <li><Link to='/about'><Icon name="help" /><br></br>About</Link></li>
