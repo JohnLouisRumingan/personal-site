@@ -24,7 +24,7 @@ class App extends React.Component {
 
         Personal Site for John-Louis Rumingan.
         <br />
-        Still working on site. 
+        Page built using CSS and HTML. Rehaul of site using React/Redux.
       </main>
     </div>
     );

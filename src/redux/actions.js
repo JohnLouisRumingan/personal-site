@@ -8,7 +8,11 @@ function backdropClick(){
     return {type: "CLOSE_DRAWER"}
 }
 
+function changePage(page){
+    return {type: "CHANGE_PAGE", page}
+}
+
 export {
     drawerClickHandler, backdropClick,
-    
+    changePage,
 };
