@@ -20,8 +20,11 @@ class App extends React.Component {
       <NavBar />
       <SideDrawer />
       {backdrop}
-      <main style={{marginTop: '50px'}}>
-        Personal Site for John-Louis Rumingan 
+      <main style={{marginTop: '20%'}}>
+
+        Personal Site for John-Louis Rumingan.
+        <br />
+        Still working on site. 
       </main>
     </div>
     );
