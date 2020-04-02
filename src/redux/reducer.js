@@ -2,7 +2,6 @@ import {combineReducers } from 'redux';
 
 let initialState = {
     sideDrawerOpen: false,
-    pageStatus: "main-page",
 }
 
 const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
@@ -16,19 +15,9 @@ const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
     }
 }
 
-const pageReducer = (state=initialState.pageStatus, action) => {
-    switch(action.type){
-        case "CHANGE_PAGE":
-            return action.page;
-        default:
-            return state;
-    }
-}
-
 
 const rootReducer = combineReducers({
     sideDrawerOpen: drawerReducer,
-    pageStatus: pageReducer,
 
 })
 

@@ -6,6 +6,7 @@ import Backdrop from './Components/Backdrop/Backdrop'
 import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux'
 import About from './Components/About'
+import LandingPage from './Components/LandingPage'
 
 class App extends React.Component {
 
@@ -16,8 +17,6 @@ class App extends React.Component {
       backdrop = <Backdrop />
     }
 
-    //switch statement here in lieu of links, page site is handled via state
-
     return (
       <div className="App" style={{height: '100%'}} >
       <NavBar />
@@ -26,17 +25,8 @@ class App extends React.Component {
       <main style={{marginTop: '5%'}}>
         <Switch>
           <Route exact path='/about' render={() => <About />}/>
+          <Route exact path='/' render={() => <LandingPage />}/>
         </Switch>
-
-        Personal Site for John-Louis Rumingan.
-        <br />
-        Page built using CSS and HTML. Rehaul of site using React/Redux.
-        <br></br>
-        <p>
-          Please note: This website is a single-page app using react-router-dom Link components.
-          However, due to github.io's method of allowing react repositories, copy/pasting the 
-          URL will not actually work to view specific links - for now. 
-        </p>
       </main>
     </div>
     );
