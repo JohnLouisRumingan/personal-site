@@ -14,6 +14,7 @@ const Navbar = () => {
                 <div className="toolbar_logo"><Link to='/'>JMR</Link></div>
                 <div className="toolbar_navigation_items">
                     <ul>
+                        <li><Link to='/hobbies'><Icon name="help" /><br></br>Hobbies</Link></li>
                         <li><Link to='/about'><Icon name="help" /><br></br>About</Link></li>
                     </ul>
                 </div>

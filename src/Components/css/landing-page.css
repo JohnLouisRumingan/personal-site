@@ -1,0 +1,12 @@
+.landing-page {
+    margin-top: 20%;
+    font-size: 12vh;
+    color: whitesmoke;
+    /* display: flex; */
+    text-align: left;
+}
+
+.landing-page p {
+    font-size: 5vh;
+    background-color: rgb(43, 98, 201);
+}

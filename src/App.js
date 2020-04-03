@@ -7,6 +7,7 @@ import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux'
 import About from './Components/About'
 import LandingPage from './Components/LandingPage'
+import HobbyPage from './Components/HobbyPage'
 
 class App extends React.Component {
 
@@ -22,9 +23,10 @@ class App extends React.Component {
       <NavBar />
       <SideDrawer />
       {backdrop}
-      <main style={{marginTop: '5%'}}>
+      <main>
         <Switch>
           <Route exact path='/about' render={() => <About />}/>
+          <Route exact path='/hobbies' render={() => <HobbyPage />}/>
           <Route exact path='/' render={() => <LandingPage />}/>
         </Switch>
       </main>
