@@ -8,10 +8,13 @@ const LandingPage = () => {
         <div className='landing-page'>
             
             John-Louis Rumingan
-            <br /><br />
-            <p>
-            Software Developer | Programmer | Designer | Artist
-            </p>
+            <br /><br /><br />
+            <div className='subtext-box'>
+
+                <p>
+                Web Developer | Programmer | Designer | Artist
+                </p>
+            </div>
             
         </div>
     )

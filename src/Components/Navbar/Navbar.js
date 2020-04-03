@@ -11,10 +11,10 @@ const Navbar = () => {
             <nav className="toolbar_navigation">
                 <div><DrawerToggleButton /*click={this.props.drawerClickHandler}*/ /> </div>
                 <div className="spacer"></div>
-                <div className="toolbar_logo"><Link to='/'>JMR</Link></div>
+                <div className="toolbar_logo"><Link to='/personal-site'>JMR</Link></div>
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><Link to='/hobbies'><Icon name="help" /><br></br>Hobbies</Link></li>
+                        <li><Link to='/hobbies'><Icon name="futbol" /><br></br>Hobbies</Link></li>
                         <li><Link to='/about'><Icon name="help" /><br></br>About</Link></li>
                     </ul>
                 </div>

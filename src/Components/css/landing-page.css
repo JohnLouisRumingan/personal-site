@@ -6,7 +6,11 @@
     text-align: left;
 }
 
-.landing-page p {
-    font-size: 5vh;
+.subtext-box {
     background-color: rgb(43, 98, 201);
+}
+
+.landing-page p {
+    margin-top: -1.5vh;
+    font-size: 5vh;
 }
