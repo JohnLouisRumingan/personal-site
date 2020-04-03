@@ -4,8 +4,8 @@
     left: 0;
     height: 56px;
     width: 100%;
-    /* background-color: blueviolet; */
-    /* background-color: rgb(92, 143, 45); */
+    background-color: blueviolet; 
+    background-color: rgb(92, 143, 45); 
     background-color: rgb(43, 98, 201);
     z-index: 1;
 }
