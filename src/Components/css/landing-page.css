@@ -1,16 +1,42 @@
 .landing-page {
     margin-top: 20%;
+    margin-left: 3%;
     font-size: 12vh;
     color: whitesmoke;
     /* display: flex; */
     text-align: left;
 }
 
+.my-name {
+    padding-bottom: 4%;
+}
+
 .subtext-box {
     background-color: rgb(43, 98, 201);
+    background-position: 50%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 2%;
 }
 
 .landing-page p {
     margin-top: -1.5vh;
     font-size: 5vh;
+}
+
+.sub-icon-box {
+    background-color: rgb(204, 50, 101);
+    /* display: flex; */
+    margin-top: -1%;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    margin-right: 5%;
+}
+
+.sub-icon-box i {
+    margin-top: -50%;
+}
+
+.sub-icon-box a {
+    color: white;
 }
