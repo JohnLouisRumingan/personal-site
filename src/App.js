@@ -7,7 +7,9 @@ import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux'
 import About from './Components/About'
 import LandingPage from './Components/LandingPage'
-import HobbyPage from './Components/HobbyPage'
+import HobbyContainer from './Containers/HobbyContainer'
+import StoryContainer from './Containers/StoryContainer';
+import ArtContainer from './Containers/ArtContainer';
 
 class App extends React.Component {
 
@@ -26,8 +28,10 @@ class App extends React.Component {
       <main>
         <Switch>
           <Route exact path='/about' render={() => <About />}/>
-          <Route exact path='/hobbies' render={() => <HobbyPage />}/>
+          <Route exact path ='/art' render={() => <ArtContainer />}/>
+          <Route exact path='/hobbies' render={() => <HobbyContainer />}/>
           <Route exact path='/personal-site' render={() => <LandingPage />}/>
+          <Route exact path='/story' render={() => <StoryContainer />}/>
         </Switch>
       </main>
     </div>

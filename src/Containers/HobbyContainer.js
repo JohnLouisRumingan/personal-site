@@ -1,14 +1,13 @@
 import React from 'react'
 import './Container.css'
 
-const ArtContainer = (props) => {
+const HobbyContainer = () => {
 
     return (
         <div className='container-page'>
-            Art goes here 
+            Hobbies:
         </div>
     )
 }
 
-
-export default ArtContainer
+export default HobbyContainer;

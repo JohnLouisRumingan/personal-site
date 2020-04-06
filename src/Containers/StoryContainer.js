@@ -4,7 +4,7 @@ import React from 'react'
 const StoryContainer = () => {
 
     return (
-        <div>
+        <div className='container-page'>
             StoryContainer
         </div>
     )

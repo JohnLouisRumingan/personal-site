@@ -4,7 +4,7 @@ import './Container.css'
 const ProjectContainer = () => {
 
     return (
-        <div>
+        <div className='container-page'>
             Projects go here:
         </div>
     )
