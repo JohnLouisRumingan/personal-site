@@ -14,7 +14,7 @@ const SideDrawer = (props) => {
     return (
         <nav className={drawerClasses.join(' ')}>
             <ul>
-                {/* <li><Link to="/about">About</Link></li> */}
+                <li><Link to='/personal-site'><Icon name="home" /><br></br>Main</Link></li> 
                 <li><Link to='/story'><Icon name="book" /><br></br>Story</Link></li> 
                 <li><Link to='/projects'><Icon name="suitcase" /><br></br>Projects</Link></li>
                 <li><Link to='/art'><Icon name="paint brush" /><br></br>Art</Link></li>

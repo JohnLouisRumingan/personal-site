@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const ArtContainer = () => {
+const ArtContainer = (props) => {
 
     return (
         <div>

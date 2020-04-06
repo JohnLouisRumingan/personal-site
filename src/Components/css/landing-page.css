@@ -25,8 +25,13 @@
 }
 
 .sub-icon-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+}
+
+.sub-icon-background {
     background-color: rgb(204, 50, 101);
-    /* display: flex; */
     margin-top: -1%;
     margin-left: 5%;
     padding-bottom: 2%;

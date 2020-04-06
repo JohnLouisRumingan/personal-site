@@ -29,12 +29,12 @@
 }
 
 .side-drawer a {
-    color: rgb(189, 22, 189);
     text-decoration: none;
     font-size: 1.5rem;
+    color: rgb(43, 98, 201);
 }
 
 .side-drawer a:hover,
 .side-drawer a:active {
-    color: rgb(245, 149, 39);
+    color: rgb(204, 50, 101);
 }
