@@ -5,7 +5,13 @@
     width: 100%;
     position: absolute;
     margin-top: -5%;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-right: 5%;
     padding-left: 5%;
+}
+
+.project-box {
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
