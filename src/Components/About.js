@@ -1,14 +1,14 @@
 import React from 'react'
-
+import '../Containers/Container.css'
 
 const About = () => {
 
 
     return (
-        <div>
-            Page built using CSS and HTML. Rehaul of site using React/Redux.
+        <div className='container-page'>
             <br></br>
             <p>
+            Page built using CSS and HTML. Rehaul of site using React/Redux.
             Please note: This website is a single-page app using react-router-dom Link components.
             However, due to github.io's method of allowing react repositories, copy/pasting the 
             URL will not actually work to view specific links - for now. 

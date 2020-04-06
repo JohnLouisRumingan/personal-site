@@ -10,6 +10,7 @@ import LandingPage from './Components/LandingPage'
 import HobbyContainer from './Containers/HobbyContainer'
 import StoryContainer from './Containers/StoryContainer';
 import ArtContainer from './Containers/ArtContainer';
+import ProjectContainer from './Containers/ProjectContainer';
 
 class App extends React.Component {
 
@@ -31,6 +32,7 @@ class App extends React.Component {
           <Route exact path ='/art' render={() => <ArtContainer />}/>
           <Route exact path='/hobbies' render={() => <HobbyContainer />}/>
           <Route exact path='/personal-site' render={() => <LandingPage />}/>
+          <Route exact path='/projects' render={() => <ProjectContainer />} />
           <Route exact path='/story' render={() => <StoryContainer />}/>
         </Switch>
       </main>

@@ -2,10 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 56px;
+    height: 75px;
     width: 100%;
-    background-color: blueviolet; 
-    background-color: rgb(92, 143, 45); 
     background-color: rgb(43, 98, 201);
     z-index: 1;
 }
