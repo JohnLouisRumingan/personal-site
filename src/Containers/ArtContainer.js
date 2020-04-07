@@ -5,7 +5,8 @@ const ArtContainer = (props) => {
 
     return (
         <div className='container-page'>
-            Art goes here 
+            I will display some of my past art projects here. 
+            Currently not accepting commissions.
         </div>
     )
 }
