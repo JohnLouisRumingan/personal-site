@@ -4,12 +4,18 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    margin-top: -5%;
-    padding-top: 8%;
+    margin-top: 0%;
+    padding-top: 3%;
     padding-right: 5%;
     padding-left: 5%;
     font-size: large;
     font-weight: 500;
+
+    overflow-y: scroll;
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    flex-direction: column;
 }
 
 .project-box {
@@ -21,7 +27,20 @@
 .scrollable-description {
     display: flex;
     flex-direction: column;
-    height: 10vh;
+    height: 15vh;
     flex: 1;
     overflow-y: scroll;
+}
+
+.container-banner {
+    color: white;
+    background-color: rgb(204, 50, 101);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 800;
+    font-size: 300%;
+    text-align: left;
+    /* margin-left: 3%; */
+    padding-left: 3%;
+
 }

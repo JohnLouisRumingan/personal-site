@@ -11,7 +11,7 @@ const projectList = [
         name: "TIKR",
         url: "https://github.com/JohnLouisRumingan/tikr_frontend", 
         image: "",
-        description: "TIKR is a small stock trading platform with historical trading data. Due to API limitations, historical data is limited but app can scale with more companies. Users can view stock details including historical stock data and add or remove them from their portolio. Built with React.js and supported by a backend API using Ruby/Rails with a Postgres db.",
+        description: "TIKR is a small stock portfolio platform with historical trading data. Due to API limitations, historical data is limited but app can scale with more companies. Users can view stock details including historical stock data and add or remove them from their portolio. Built with React.js and supported by a backend API using Ruby/Rails with a Postgres db.",
     },
     {
         name: "Codenames",

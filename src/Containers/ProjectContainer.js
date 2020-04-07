@@ -8,7 +8,9 @@ const ProjectContainer = (props) => {
 
     return (
         <div className='container-page'>
+            <div className='container-banner'>
             Projects page:
+            </div>
             <Card.Group>
                 {props.projects? props.projects.map( project => <ProjectCard info={project}/>) : null }
             </Card.Group>
