@@ -20,7 +20,9 @@ const ProjectCard = (props) => {
                 </Button>
                 <br></br>
                 <Card.Description>
+                    <div className='scrollable-description '>
                     {description}
+                    </div>
                 </Card.Description>
             </Card>
         </div>

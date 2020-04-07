@@ -17,3 +17,11 @@
     padding-left: 2%;
     padding-right: 2%;
 }
+
+.scrollable-description {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    flex: 1;
+    overflow-y: scroll;
+}
