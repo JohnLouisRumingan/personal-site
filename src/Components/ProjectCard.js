@@ -1,13 +1,14 @@
 import React from 'react'
-import { Card, Button, Icon } from 'semantic-ui-react'
+import { Card, Button, Icon, Image } from 'semantic-ui-react'
 
 const ProjectCard = (props) => {
 
-    let {name, description, url} = props.info
+    let {name, description, url, imgSource} = props.info
 
     return (
         <div className='project-box'>
             <Card>
+                <Image src={imgSource} wrapped ui={false}/>
                 <Card.Header>
                     <h2>{name}</h2>
                 </Card.Header>
@@ -20,7 +21,7 @@ const ProjectCard = (props) => {
                 </Button>
                 <br></br>
                 <Card.Description>
-                    <div className='scrollable-description '>
+                    <div className='scrollable-description'>
                     {description}
                     </div>
                 </Card.Description>
