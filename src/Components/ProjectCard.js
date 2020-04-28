@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     return (
         <div className='project-box'>
             <Card>
-                <Image src={imgSource} wrapped ui={false}/>
+                {imgSource? <Image src={imgSource} wrapped ui={false}/> : null }
                 <Card.Header>
                     <h2>{name}</h2>
                 </Card.Header>
