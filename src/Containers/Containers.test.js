@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import ArtContainer from './ArtContainer';
 import HobbyContainer from './HobbyContainer';
+import ProjectContainer from './ProjectContainer';
+
 
 test('art container says no commissions', () => {
 
@@ -20,6 +22,8 @@ test('hobby container contains "Hobbies" ', () => {
 
 test ('project container contains "Projects" headline', () => {
 
+
+  //line 27 not working, need to connect mock store usage, not basic component like hobby container
   const { getByText } = render(<ProjectContainer />);
   const project = getByText(/Projects Page:/);
   expect(project).toBeInTheDocument();
