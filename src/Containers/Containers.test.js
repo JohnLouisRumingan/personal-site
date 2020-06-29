@@ -16,3 +16,11 @@ test('hobby container contains "Hobbies" ', () => {
   const hobby = getByText(/Hobbies:/);
   expect(hobby).toBeInTheDocument();
 })
+
+
+test ('project container contains "Projects" headline', () => {
+
+  const { getByText } = render(<ProjectContainer />);
+  const project = getByText(/Projects Page:/);
+  expect(project).toBeInTheDocument();
+})
