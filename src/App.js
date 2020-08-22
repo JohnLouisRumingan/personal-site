@@ -30,7 +30,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/about' render={() => <About />}/>
           <Route exact path ='/art' render={() => <ArtContainer />}/>
-          <Route exact path='/hobbies' render={() => <HobbyContainer />}/>
+          {/* <Route exact path='/hobbies' render={() => <HobbyContainer />}/> */}
           <Route exact path='/personal-site' render={() => <LandingPage />}/>
           <Route exact path='/projects' render={() => <ProjectContainer />} />
           <Route exact path='/story' render={() => <StoryContainer />}/>
