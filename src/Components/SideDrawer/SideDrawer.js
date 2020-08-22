@@ -3,6 +3,7 @@ import './SideDrawer.css';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux'
 import { Icon } from 'semantic-ui-react'
+import { backdropClick } from '../../redux/actions'
 
 const SideDrawer = (props) => {
 
@@ -12,14 +13,17 @@ const SideDrawer = (props) => {
     }
     
     return (
-        <nav className={drawerClasses.join(' ')}>
-            <ul>
-                <li><Link to='/personal-site'><Icon name="home" /><br></br>Main</Link></li> 
-                <li><Link to='/story'><Icon name="book" /><br></br>Story</Link></li> 
-                <li><Link to='/projects'><Icon name="suitcase" /><br></br>Projects</Link></li>
-                <li><Link to='/art'><Icon name="paint brush" /><br></br>Art</Link></li>
+        <nav className="menu">
+            <div className="menu-branding">
+                <div classname="portrait"></div>
+            </div>
+            <ul className="menu-nav">
+                <li className="nav-item"><Link to='/personal-site' className="nav-link"><Icon name="home" /><br></br>Main</Link></li> 
+                <li className="nav-item"><Link to='/story' className="nav-link"><Icon name="book" /><br></br>Story</Link></li> 
+                <li className="nav-item"><Link to='/projects' className="nav-link"><Icon name="suitcase" /><br></br>Projects</Link></li>
+                <li className="nav-item"><Link to='/art' className="nav-link"><Icon name="paint brush" /><br></br>Art</Link></li>
+                <li className="nav-item"><Link to='/about' className="nav-link"><Icon name="help" /><br></br>About</Link></li>
                 {/* <li><Link to='/hobbies'><Icon name="gamepad" /><br></br>Hobbies</Link></li> */}
-                <li><Link to='/about'><Icon name="help" /><br></br>About</Link></li>
             </ul>
         </nav>
     )

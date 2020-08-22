@@ -1,5 +1,6 @@
 import React from 'react'
-import './navbar.css'
+// import './navbar.css'
+import '../../dist/css/main.css'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
 import { Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
@@ -7,19 +8,11 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     return (
-        <header className="toolbar">
-            <nav className="toolbar_navigation">
-                <div><DrawerToggleButton /*click={this.props.drawerClickHandler}*/ /> </div>
-                <div className="spacer"></div>
-                <div className="toolbar_logo"><Link to='/personal-site'>JLR</Link></div>
-                <div className="toolbar_navigation_items">
-                    <ul>
-                        <li><Link to='/story'><Icon name="book" /><br></br>Story</Link></li> 
-                        <li><Link to='/projects'><Icon name="suitcase" /><br></br>Projects</Link></li>
-                        <li><Link to='/art'><Icon name="paint brush" /><br></br>Art</Link></li>
-                        {/* <li><Link to='/hobbies'><Icon name="gamepad" /><br></br>Hobbies</Link></li> */}
-                        <li><Link to='/about'><Icon name="help" /><br></br>About</Link></li>
-                    </ul>
+        <header>
+            <DrawerToggleButton/> 
+            <nav className="menu">
+                <div className="menu-branding">
+                    <div className="portrait"></div>
                 </div>
             </nav>
         </header>

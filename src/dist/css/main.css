@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #444;
+  color: set-text-color(#444);
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }

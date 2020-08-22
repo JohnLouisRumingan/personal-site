@@ -7,10 +7,10 @@ import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux'
 import About from './Components/About'
 import LandingPage from './Components/LandingPage'
-import HobbyContainer from './Containers/HobbyContainer'
 import StoryContainer from './Containers/StoryContainer';
 import ArtContainer from './Containers/ArtContainer';
 import ProjectContainer from './Containers/ProjectContainer';
+// import HobbyContainer from './Containers/HobbyContainer'
 
 class App extends React.Component {
 
@@ -23,20 +23,20 @@ class App extends React.Component {
 
     return (
       <div className="App" style={{height: '100%'}} >
-      <NavBar />
-      <SideDrawer />
-      {backdrop}
-      <main>
-        <Switch>
-          <Route exact path='/about' render={() => <About />}/>
-          <Route exact path ='/art' render={() => <ArtContainer />}/>
-          {/* <Route exact path='/hobbies' render={() => <HobbyContainer />}/> */}
-          <Route exact path='/personal-site' render={() => <LandingPage />}/>
-          <Route exact path='/projects' render={() => <ProjectContainer />} />
-          <Route exact path='/story' render={() => <StoryContainer />}/>
-        </Switch>
-      </main>
-    </div>
+        <NavBar />
+        <SideDrawer />
+        {backdrop}
+        <main>
+          <Switch>
+            <Route exact path='/about' render={() => <About />}/>
+            <Route exact path ='/art' render={() => <ArtContainer />}/>
+            {/* <Route exact path='/hobbies' render={() => <HobbyContainer />}/> */}
+            <Route exact path='/personal-site' render={() => <LandingPage />}/>
+            <Route exact path='/projects' render={() => <ProjectContainer />} />
+            <Route exact path='/story' render={() => <StoryContainer />}/>
+          </Switch>
+        </main>
+      </div>
     );
   }
 }
