@@ -23,7 +23,6 @@ const SideDrawer = (props) => {
                 <li className="nav-item"><Link to='/projects' className="nav-link"><Icon name="suitcase" /><br></br>Projects</Link></li>
                 <li className="nav-item"><Link to='/art' className="nav-link"><Icon name="paint brush" /><br></br>Art</Link></li>
                 <li className="nav-item"><Link to='/about' className="nav-link"><Icon name="help" /><br></br>About</Link></li>
-                {/* <li><Link to='/hobbies'><Icon name="gamepad" /><br></br>Hobbies</Link></li> */}
             </ul>
         </nav>
     )
