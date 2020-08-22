@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './dist/css/main.css';
 import NavBar from './Components/Navbar/Navbar'
 import SideDrawer from './Components/SideDrawer/SideDrawer'
 import Backdrop from './Components/Backdrop/Backdrop'
