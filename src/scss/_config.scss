@@ -12,7 +12,7 @@ $portrait-small-url: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternative
 
 @mixin background {
     @if $show-home-image {
-        &#bg-image {
+        .App.bg-image {
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;

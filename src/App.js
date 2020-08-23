@@ -23,7 +23,7 @@ class App extends React.Component {
     }
 
     return (
-      <div className="App" style={{height: '100%'}} >
+      <div className={this.props.navigation === "/personal-site" ? "App bg-image" : "App"} style={{height: '100%'}} >
         <header>
           <DrawerToggleButton />
           <SideDrawer />

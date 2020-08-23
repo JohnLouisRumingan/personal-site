@@ -17,6 +17,15 @@ body {
     line-height: 1.5;
 }
 
+#root,
+#root > .App {
+    height: 100vh;
+
+    &.bg-image{
+        height: 100vh;
+    }
+}
+
 //  headings
 
 h1, 

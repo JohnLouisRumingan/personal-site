@@ -14,17 +14,41 @@ const StoryContainer = () => {
         //         </p>
         //     </div>
         // </div>
-        <div>
-            <main id="about">
-                <h1 className="lg-heading">
-                    My <span class="text-secondary">Story</span>
-                </h1>
-                <h2 className="sm-heading">
-                    Some things about me
-                </h2>
-            </main>
-            
-        </div>
+        <main id="about">
+            <h1 className="lg-heading">
+                My <span class="text-secondary">Story</span>
+            </h1>
+            <h2 className="sm-heading">
+                Some things about me
+            </h2>
+            <div className="about-info">
+                <img src="" alt="Picture of John-Louis Rumingan" className="bio-image"/>
+                <div className="bio">
+                    <h3 class="text-secondary">Bio</h3>
+                    <p>
+                        Lorem ipsum
+                    </p>
+                </div>
+                <div className="job job-1">
+                    <h3>Experience</h3>
+                    <p>
+                        Story
+                    </p>
+                </div>
+                <div className="job job-2">
+                    <h3>Technology I know</h3>
+                    <p>
+                        List of tech here
+                    </p>
+                </div>
+                <div className="job job-3">
+                    <h3>Full-Stack Development Student</h3>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </main>
     )
 }
 

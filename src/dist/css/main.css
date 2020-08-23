@@ -137,11 +137,11 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-  body#bg-image {
+  body .App.bg-image {
     background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg");
     background-attachment: fixed;
     background-size: cover; }
-    body#bg-image:after {
+    body .App.bg-image:after {
       content: '';
       position: absolute;
       top: 0;
@@ -150,6 +150,13 @@ body {
       height: 100%;
       z-index: -1;
       background: rbga(#444, 0.9); }
+
+#root,
+#root > .App {
+  height: 100vh; }
+  #root.bg-image,
+  #root > .App.bg-image {
+    height: 100vh; }
 
 h1,
 h2,
