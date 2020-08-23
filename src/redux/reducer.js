@@ -30,6 +30,7 @@ const projectList = [
 let initialState = {
     sideDrawerOpen: false,
     projectList,
+    navigationPage: "/personal-site"
 }
 
 const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
@@ -50,9 +51,17 @@ const projectReducer = (state=initialState.projectList, action) => {
     }
 }
 
+const navigationReducer = (state=initialState.navigationPage, action) => {
+    switch(action.type){
+        default: 
+        return state;
+    }
+} 
+
 const rootReducer = combineReducers({
     sideDrawerOpen: drawerReducer,
     projectList: projectReducer,
+    navigationPage: navigationReducer,
 })
 
 export default rootReducer
