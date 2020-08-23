@@ -20,19 +20,19 @@ const LandingPage = () => {
                     onClick={(e) => {
                         e.preventDefault();
                         window.open("https://github.com/JohnLouisRumingan");}}>
-                    <Icon name='github' size='small' />
+                    <Icon name='github' size='big' />
                 </a>
                 <a href='https://www.linkedin.com/in/john-louis-rumingan/'
                     onClick={(e) => {
                         e.preventDefault();
                         window.open('https://www.linkedin.com/in/john-louis-rumingan/')}}>
-                    <Icon name='linkedin' size='small'/>
+                    <Icon name='linkedin' size='big'/>
                 </a>
                 <a href='https://medium.com/@john.louis.rumingan'
                     onClick={(e) => {
                         e.preventDefault();
                         window.open('https://medium.com/@john.louis.rumingan')}}>
-                    <Icon name='medium' size='small'/>
+                    <Icon name='medium' size='big'/>
                 </a>
             </div>
         </main>
