@@ -58,6 +58,8 @@
       width: 250px;
       height: 250px;
       background: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
       border-radius: 50%;
       border: solid 3px hotpink; }
   .menu .nav-item {
@@ -116,6 +118,8 @@
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
       width: 150px;
       height: 150px; } }
 
@@ -128,7 +132,7 @@
 
 body {
   background: #444;
-  color: set-text-color(#444);
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -31,6 +31,16 @@ $portrait-small-url: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternative
     }
 }
 
+// set text color
+@function set-text-color($color){
+    @if(lightness($color) > 40){
+        @return #444;
+    }
+    @else{
+        @return #fff;
+    }
+}
+
 // media size query mixins
 // small
 @mixin mediaSm {

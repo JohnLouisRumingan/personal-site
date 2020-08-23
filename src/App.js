@@ -10,6 +10,7 @@ import LandingPage from './Components/LandingPage'
 import StoryContainer from './Containers/StoryContainer';
 import ArtContainer from './Containers/ArtContainer';
 import ProjectContainer from './Containers/ProjectContainer';
+import Copyright from './Containers/Copyright';
 // removed Redirect and withRouter from react-router-dom import 
 
 class App extends React.Component {
@@ -35,6 +36,7 @@ class App extends React.Component {
           <Route exact path='/projects' render={() => <ProjectContainer />} />
           <Route exact path='/story' render={() => <StoryContainer />}/>
         </Switch>
+        {this.props.navigation === "/personal-site" ? null : <Copyright />}
       </div>
     );
   }
@@ -42,7 +44,8 @@ class App extends React.Component {
 
 const mapStateToProps = (state) => {
    return {
-    sideDrawerOpen: state.sideDrawerOpen
+    sideDrawerOpen: state.sideDrawerOpen,
+    navigation: state.navigationPage,
    }
 }
 

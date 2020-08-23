@@ -33,10 +33,10 @@ const SideDrawer = (props) => {
                     <Icon name="home" />Main</Link>
                 </li> 
                 <li className={toggleShowClass("nav-item", "/story")}><Link to='/story' className="nav-link" onClick={() => props.navigate("/story")}>
-                    <Icon name="book" />Story</Link>
+                    <Icon name="book" />My Story</Link>
                 </li> 
                 <li className={toggleShowClass("nav-item", "/projects")}><Link to='/projects' className="nav-link" onClick={() => props.navigate("/projects")}>
-                    <Icon name="suitcase" />Projects</Link>
+                    <Icon name="suitcase" />My Projects</Link>
                 </li>
                 <li className={toggleShowClass("nav-item", "/art")}><Link to='/art' className="nav-link" onClick={() => props.navigate("/art")}>
                     <Icon name="paint brush" />Art</Link>
