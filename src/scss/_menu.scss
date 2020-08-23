@@ -107,10 +107,19 @@ $nav-items: 4;
             transform: translate3d(0, 0, 0);
         }
     }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 300;
+        color: #fff;
+    }
 }
 
 // delay the nav item slide
-
 @for $x from 1 through $nav-items {
     .nav-item:nth-child(#{$x}) {
         transition-delay: $x * 0.2s;
