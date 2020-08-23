@@ -8,6 +8,10 @@ function backdropClick(){
     return {type: "CLOSE_DRAWER"}
 }
 
+function navigateSite(site){
+    return{type: "NAVIGATE_SITE", site}
+}
+
 export {
-    drawerClickHandler, backdropClick,
+    drawerClickHandler, backdropClick, navigateSite,
 };

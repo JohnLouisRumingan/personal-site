@@ -53,6 +53,8 @@ const projectReducer = (state=initialState.projectList, action) => {
 
 const navigationReducer = (state=initialState.navigationPage, action) => {
     switch(action.type){
+        case "NAVIGATE_SITE":
+            return action.site;
         default: 
         return state;
     }
