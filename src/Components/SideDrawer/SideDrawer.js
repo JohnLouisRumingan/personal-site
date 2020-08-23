@@ -1,5 +1,5 @@
 import React from 'react'
-import './SideDrawer.css';
+// import './SideDrawer.css';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux'
 import { Icon } from 'semantic-ui-react'

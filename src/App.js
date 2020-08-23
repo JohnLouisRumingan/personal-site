@@ -3,14 +3,14 @@ import './dist/css/main.css';
 import DrawerToggleButton from './Components/SideDrawer/DrawerToggleButton'
 import SideDrawer from './Components/SideDrawer/SideDrawer'
 import Backdrop from './Components/Backdrop/Backdrop'
-import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import { connect } from 'react-redux'
 import About from './Components/About'
 import LandingPage from './Components/LandingPage'
 import StoryContainer from './Containers/StoryContainer';
 import ArtContainer from './Containers/ArtContainer';
 import ProjectContainer from './Containers/ProjectContainer';
-// import HobbyContainer from './Containers/HobbyContainer'
+// removed Redirect and withRouter from react-router-dom import 
 
 class App extends React.Component {
 
