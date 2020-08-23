@@ -1,4 +1,5 @@
 // menu button
+$menu-button-click: red;
 
 .menu-btn {
     position: absolute;
@@ -7,12 +8,30 @@
     top: 35px;
     cursor: pointer;
     @include easeOut;
-}
+    
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: #fff;
+        @include easeOut;
+    }
 
-.btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #fff;
-    @include easeOut;
+    &.close {
+        transform: rotate(180deg);
+        
+        .btn-line{
+            &:nth-child(1){
+                transform: rotate(45deg) translate(5px, 5px);
+                background: $menu-button-click;
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(-45deg) translate(7px, -6px);
+                background: $menu-button-click;
+            }
+        }
+    }
 }
