@@ -3,7 +3,7 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux'
 import { Icon } from 'semantic-ui-react'
-import { backdropClick } from '../../redux/actions'
+// import { backdropClick } from '../../redux/actions'
 
 const SideDrawer = (props) => {
 
@@ -31,7 +31,8 @@ const SideDrawer = (props) => {
 const mapStateToProps = (state) => {
 
     return{
-        show: state.sideDrawerOpen
+        show: state.sideDrawerOpen, 
+        site: state.navigationPage
     }
 }
 
