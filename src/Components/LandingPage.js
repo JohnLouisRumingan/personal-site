@@ -1,7 +1,7 @@
 import React from 'react'
 // import './css/landing-page.css'
 import { Icon } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 
 const LandingPage = () => {

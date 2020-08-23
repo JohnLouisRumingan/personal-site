@@ -27,43 +27,9 @@ const projectList = [
     }
 ]
 
-const navigationList = [
-    {
-        link: "/personal-site",
-        class: "nav-link",
-        icon: "home", 
-        description: "Home"
-    }, 
-    {
-        link: "/story",
-        class: "nav-link",
-        icon: "book", 
-        description: "Home"
-    },
-    {
-        link: "/projects",
-        class: "nav-link",
-        icon: "suitcase", 
-        description: "Projects"
-    },
-    {
-        link: "/art",
-        class: "nav-link",
-        icon: "paint brush", 
-        description: "Art"
-    },
-    {
-        link: "/about",
-        class: "nav-link",
-        icon: "help", 
-        description: "About"
-    }
-] 
-
 let initialState = {
     sideDrawerOpen: false,
     projectList,
-    navigationList,
 }
 
 const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
@@ -84,17 +50,9 @@ const projectReducer = (state=initialState.projectList, action) => {
     }
 }
 
-const navigationReducer = (state=initialState.navigationList, action) => {
-    switch(action.type){
-        default:
-            return state;
-    }
-}
-
 const rootReducer = combineReducers({
     sideDrawerOpen: drawerReducer,
     projectList: projectReducer,
-    navigationList: navigationReducer,
 })
 
 export default rootReducer
