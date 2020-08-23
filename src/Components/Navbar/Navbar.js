@@ -1,6 +1,6 @@
 import React from 'react'
 // import './navbar.css'
-import '../../dist/css/main.css'
+// import '../../dist/css/main.css'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
 import { Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'

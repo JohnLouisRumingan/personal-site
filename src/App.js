@@ -26,7 +26,7 @@ class App extends React.Component {
         <header>
           <DrawerToggleButton />
           <SideDrawer />
-          {backdrop}
+          {/* {backdrop} */}
         </header>
         <Switch>
           <Route exact path='/about' render={() => <About />}/>

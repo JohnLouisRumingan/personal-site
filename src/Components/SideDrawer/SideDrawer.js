@@ -27,14 +27,14 @@ const SideDrawer = (props) => {
     return (
         <nav className={toggleShowClass("menu")}>
             <div className={toggleShowClass("menu-branding")}>
-                <div classname="portrait"></div>
+                <div className="portrait"></div>
             </div>
             <ul className={toggleShowClass("menu-nav")}>
-                <li className={toggleShowClass("nav-item")}><Link to='/personal-site' className="nav-link"><Icon name="home" /><br></br>Main</Link></li> 
-                <li className={toggleShowClass("nav-item")}><Link to='/story' className="nav-link"><Icon name="book" /><br></br>Story</Link></li> 
-                <li className={toggleShowClass("nav-item")}><Link to='/projects' className="nav-link"><Icon name="suitcase" /><br></br>Projects</Link></li>
-                <li className={toggleShowClass("nav-item")}><Link to='/art' className="nav-link"><Icon name="paint brush" /><br></br>Art</Link></li>
-                <li className={toggleShowClass("nav-item")}><Link to='/about' className="nav-link"><Icon name="help" /><br></br>About</Link></li>
+                <li className={toggleShowClass("nav-item")}><Link to='/personal-site' className="nav-link"><Icon name="home" />Main</Link></li> 
+                <li className={toggleShowClass("nav-item")}><Link to='/story' className="nav-link"><Icon name="book" />Story</Link></li> 
+                <li className={toggleShowClass("nav-item")}><Link to='/projects' className="nav-link"><Icon name="suitcase" />Projects</Link></li>
+                <li className={toggleShowClass("nav-item")}><Link to='/art' className="nav-link"><Icon name="paint brush" />Art</Link></li>
+                <li className={toggleShowClass("nav-item")}><Link to='/about' className="nav-link"><Icon name="help" />About</Link></li>
             </ul>
         </nav>
     )
