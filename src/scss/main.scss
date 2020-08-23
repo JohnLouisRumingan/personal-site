@@ -1,4 +1,6 @@
+// menu has dependencies on config
 @import 'config';
+@import 'menu';
 
 * {
     box-sizing: border-box;
