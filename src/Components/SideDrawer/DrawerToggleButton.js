@@ -6,8 +6,14 @@ import { connect } from 'react-redux'
 
 const drawerToggleButton = props => {
 
+    let menuBtn = ["menu-btn"];
+    if(props.show){
+        menuBtn = [...menuBtn, "close"];
+        menuBtn = menuBtn.join(' ');
+    }
+
     return (
-        <div className="menu-btn" onClick={props.click}>
+        <div className={menuBtn} onClick={props.click}>
             <div className="btn-line"></div>
             <div className="btn-line"></div>
             <div className="btn-line"></div>   
