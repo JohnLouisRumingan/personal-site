@@ -1,6 +1,6 @@
 import React from 'react';
 import './dist/css/main.css';
-import NavBar from './Components/Navbar/Navbar'
+import DrawerToggleButton from './Components/SideDrawer/DrawerToggleButton'
 import SideDrawer from './Components/SideDrawer/SideDrawer'
 import Backdrop from './Components/Backdrop/Backdrop'
 import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
@@ -23,19 +23,18 @@ class App extends React.Component {
 
     return (
       <div className="App" style={{height: '100%'}} >
-        <NavBar />
-        <SideDrawer />
-        {backdrop}
-        <main>
-          <Switch>
-            <Route exact path='/about' render={() => <About />}/>
-            <Route exact path ='/art' render={() => <ArtContainer />}/>
-            {/* <Route exact path='/hobbies' render={() => <HobbyContainer />}/> */}
-            <Route exact path='/personal-site' render={() => <LandingPage />}/>
-            <Route exact path='/projects' render={() => <ProjectContainer />} />
-            <Route exact path='/story' render={() => <StoryContainer />}/>
-          </Switch>
-        </main>
+        <header>
+          <DrawerToggleButton />
+          <SideDrawer />
+          {backdrop}
+        </header>
+        <Switch>
+          <Route exact path='/about' render={() => <About />}/>
+          <Route exact path ='/art' render={() => <ArtContainer />}/>
+          <Route exact path='/personal-site' render={() => <LandingPage />}/>
+          <Route exact path='/projects' render={() => <ProjectContainer />} />
+          <Route exact path='/story' render={() => <StoryContainer />}/>
+        </Switch>
       </div>
     );
   }

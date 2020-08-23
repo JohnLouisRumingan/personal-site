@@ -7,16 +7,17 @@ import { Link } from 'react-router-dom'
 const LandingPage = () => {
 
     return (
-        <div className='landing-page'>
-            <div className='my-name'>
-            John-Louis Rumingan
-            </div>
-            <div className='subtext-box'>
+        <main >  
+            <div className='landing-page'>
+                <div className='my-name'>
+                John-Louis Rumingan
+                </div>
+                <div className='subtext-box'>
 
-                <p>
-                Web Developer | Programmer | Designer | Artist
-                </p>
-            </div>
+                    <p>
+                    Web Developer | Programmer | Designer | Artist
+                    </p>
+                </div>
                 <div className='sub-icon-background'>
                     <div className='sub-icon-box'>
                         <a href='https://github.com/JohnLouisRumingan'
@@ -39,7 +40,8 @@ const LandingPage = () => {
                         </a>
                     </div>
                 </div>
-        </div>
+            </div>
+        </main>
     )
 }
 
