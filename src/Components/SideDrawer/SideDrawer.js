@@ -7,9 +7,9 @@ import { Icon } from 'semantic-ui-react'
 
 const SideDrawer = (props) => {
 
-    let drawerClasses = ['side-drawer'];
+    let navItems = ["nav-item"];
     if(props.show){
-        drawerClasses = [...drawerClasses, 'open']
+        navItems = [...navItems, 'show']
     }
     
     return (
@@ -18,7 +18,7 @@ const SideDrawer = (props) => {
                 <div classname="portrait"></div>
             </div>
             <ul className="menu-nav">
-                <li className="nav-item"><Link to='/personal-site' className="nav-link"><Icon name="home" /><br></br>Main</Link></li> 
+                <li className={navItems}><Link to='/personal-site' className="nav-link"><Icon name="home" /><br></br>Main</Link></li> 
                 <li className="nav-item"><Link to='/story' className="nav-link"><Icon name="book" /><br></br>Story</Link></li> 
                 <li className="nav-item"><Link to='/projects' className="nav-link"><Icon name="suitcase" /><br></br>Projects</Link></li>
                 <li className="nav-item"><Link to='/art' className="nav-link"><Icon name="paint brush" /><br></br>Art</Link></li>

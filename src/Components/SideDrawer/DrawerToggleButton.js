@@ -15,10 +15,17 @@ const drawerToggleButton = props => {
     )
 }
 
+const mapStateToProps = (state) => {
+
+    return{
+        show: state.sideDrawerOpen
+    }
+}
+
 const mapDispatchToProps = (dispatch) =>{
     return {
         click: () => dispatch(drawerClickHandler())
     }
 }
 
-export default connect(null, mapDispatchToProps)(drawerToggleButton)
+export default connect(mapStateToProps, mapDispatchToProps)(drawerToggleButton)
