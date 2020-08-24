@@ -1,7 +1,5 @@
 import React from 'react'
-// import './Container.css'
 import { connect } from 'react-redux'
-import { Card } from 'semantic-ui-react'
 import ProjectCard from '../Components/ProjectCard'
 
 const ProjectContainer = (props) => {
