@@ -6,9 +6,13 @@ const BlogCard = (props) => {
     let {title, url, description} = props.info
 
     return (
-        <div>
-            <span class="text-secondary">{title}</span>  - {description}
-        </div>
+        <a href={url} onClick={(e) => {
+            e.preventDefault();
+            window.open(url);}}>
+            <div>
+                <span class="text-secondary">{title}</span>  - {description}
+            </div>
+        </a>
     )
 }
 
