@@ -7,6 +7,8 @@ $portrait-url: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-s
 $portrait-small-url: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg"); //small portrait
 $footer-height: 60px;
 
+// play with portrait controls in _mobile, _menu
+
 
 @mixin easeOut {
     transition: all 0.5s ease-out;

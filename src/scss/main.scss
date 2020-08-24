@@ -17,6 +17,7 @@ body {
     line-height: 1.5;
 }
 
+// below is needed for the entire root/app background for react
 #root,
 #root > .App {
     height: 100vh;
