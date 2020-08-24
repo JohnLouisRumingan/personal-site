@@ -19,14 +19,14 @@ body {
 }
 
 // below is needed for the entire root/app background for react
-#root,
+#root, 
 #root > div.App {
     height: 100%;
+    margin: 0;
 
     &.bg-image{
         height: 100%;
     }
-
 }
 
 //  headings
@@ -67,6 +67,7 @@ header {
 main {
     padding: 4rem;
     height: 100%; 
+    margin-bottom: -$footer-height;
     // min-height: calc(100vh - $footer-height);
     // max-height: calc(100vh - $footer-height);
     
