@@ -18,7 +18,6 @@ body {
 }
 
 // below is needed for the entire root/app background for react
-// 100vh or 100%? Needs width?
 #root,
 #root > div.App {
     height: 100%;
@@ -26,6 +25,7 @@ body {
     &.bg-image{
         height: 100%;
     }
+
 }
 
 //  headings
@@ -135,6 +135,8 @@ main {
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: $footer-height;
+    // margin-top: -$footer-height;
+    // position: fixed;
 
 }
 
