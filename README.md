@@ -12,3 +12,4 @@ Sass branch will be done using SASS and React and will be deployed once finished
 Legacy branch has current production version as of 2020.8.22.
 
 Testing remote second branch
+Move remote second branch to master 
