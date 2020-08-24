@@ -17,17 +17,11 @@ class App extends React.Component {
 
   render(){
 
-    let backdrop;
-    if (this.props.sideDrawerOpen){
-      backdrop = <Backdrop />
-    }
-
     return (
       <div className={this.props.navigation === "/personal-site" ? "App bg-image" : "App"} style={{height: '100%'}} >
         <header>
           <DrawerToggleButton />
           <SideDrawer />
-          {/* {backdrop} */}
         </header>
         <Switch>
           <Route exact path='/about' render={() => <About />}/>
