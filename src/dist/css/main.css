@@ -155,8 +155,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
-  min-height: calc(100vh - $footer-height); }
+  height: 100%; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
