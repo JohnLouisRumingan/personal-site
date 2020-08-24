@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux'
 import { Icon } from 'semantic-ui-react'
 import {navigateSite} from '../../redux/actions'
-// import './SideDrawer.css';
-// import { backdropClick } from '../../redux/actions'
+import {drawerClickHandler} from '../../redux/actions'
 
 const SideDrawer = (props) => {
 
@@ -28,7 +27,7 @@ const SideDrawer = (props) => {
             <div className={toggleShowClass("menu-branding")}>
                 <div className="portrait"></div>
             </div>
-            <ul className={toggleShowClass("menu-nav")}>
+            <ul className={toggleShowClass("menu-nav")} onClick={props.click}>
                 <li className={toggleShowClass("nav-item", "/personal-site")}><Link to='/personal-site' className="nav-link" onClick={() => props.navigate("/personal-site")}>
                     <Icon name="home" />Main</Link>
                 </li> 
@@ -38,9 +37,9 @@ const SideDrawer = (props) => {
                 <li className={toggleShowClass("nav-item", "/projects")}><Link to='/projects' className="nav-link" onClick={() => props.navigate("/projects")}>
                     <Icon name="suitcase" />My Projects</Link>
                 </li>
-                <li className={toggleShowClass("nav-item", "/art")}><Link to='/art' className="nav-link" onClick={() => props.navigate("/art")}>
+                {/* <li className={toggleShowClass("nav-item", "/art")}><Link to='/art' className="nav-link" onClick={() => props.navigate("/art")}>
                     <Icon name="paint brush" />Art</Link>
-                </li>
+                </li> */}
                 <li className={toggleShowClass("nav-item", "/about")}><Link to='/about' className="nav-link" onClick={() => props.navigate("/about")}>
                     <Icon name="help" />About</Link>
                 </li>
@@ -59,7 +58,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return{
-        navigate: (target) => dispatch(navigateSite(target))
+        navigate: (target) => dispatch(navigateSite(target)),
+        click: () => dispatch(drawerClickHandler())
     }
 }
 
