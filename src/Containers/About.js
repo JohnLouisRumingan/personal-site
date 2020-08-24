@@ -10,11 +10,11 @@ const About = () => {
                 About <span className="text-secondary">This </span> Page
             </h1>
             <h2 className="sm-heading">
-                React | SASS | JavaScript | CSS | HTML
+                HTML | JavaScript | React | CSS | SASS | Semantic
             </h2>
             <div className="site-description">
                 <p>
-                Page built using CSS and HTML. Rehaul of site using React/Redux.
+                Page built using the above technlogies.
                 Please note: This website is a single-page app using react-router-dom components.
                 Copy/pasting URLs aside from https://johnlouisrumingan.github.io/personal-site/ will not work - all routing is done client-side. 
                 </p>

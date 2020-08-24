@@ -192,6 +192,30 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: hotpink 5px solid; }
+    .about-info .job li {
+      padding: 0.2rem;
+      text-align: left; }
+    .about-info .job .icons-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 1rem;
+      overflow: none; }
+      .about-info .job .icons-container i {
+        font-size: 5rem;
+        padding: 0.1rem 0.1rem; }
+        .about-info .job .icons-container i:hover {
+          background: hotpink;
+          transition: all 0.5s ease-out;
+          color: #444; }
+      .about-info .job .icons-container img {
+        max-height: 5rem;
+        max-width: 5rem; }
+        .about-info .job .icons-container img:hover {
+          background: hotpink;
+          transition: all 0.5s ease-out;
+          color: #444; }
 
 .projects {
   display: grid;
