@@ -7,7 +7,6 @@ import { Icon } from 'semantic-ui-react'
 const LandingPage = () => {
 
     return (
-    // <div>
         <main id="home">  
             <h1 className="lg-heading">
                 John-Louis <span className="text-secondary">Rumingan</span>
@@ -36,7 +35,6 @@ const LandingPage = () => {
                 </a>
             </div>
         </main>
-    // </div>
     )
 }
 

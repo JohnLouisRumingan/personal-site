@@ -205,6 +205,9 @@ main {
       border-color: hotpink;
       transition: all 0.5s ease-out; }
 
+.site-description {
+  display: block; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
