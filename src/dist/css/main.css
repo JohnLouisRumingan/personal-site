@@ -227,7 +227,10 @@ main {
       background-size: cover;
       background-repeat: no-repeat;
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'past' 'tech' 'student';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

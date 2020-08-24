@@ -50,6 +50,17 @@
             height: 150px;
         }
     }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'past'
+        'tech'
+        'student';
+
+        grid-template-columns: 1fr;
+    }
 }
 
 // mobile smartphones
