@@ -66,8 +66,8 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%; 
-    margin-bottom: -$footer-height;
+    // height: 100%; 
+    margin-bottom: -($footer-height);
     // min-height: calc(100vh - $footer-height);
     // max-height: calc(100vh - $footer-height);
     

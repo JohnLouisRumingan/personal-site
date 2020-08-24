@@ -36,7 +36,7 @@ class App extends React.Component {
           <Route exact path='/projects' render={() => <ProjectContainer />} />
           <Route exact path='/story' render={() => <StoryContainer />}/>
         </Switch>
-        {/* {this.props.navigation === "/personal-site" ? null : <Copyright />} */}
+        {this.props.navigation === "/personal-site" ? null : <Copyright />}
       </div>
     );
   }
