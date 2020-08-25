@@ -1,14 +1,19 @@
 import React from 'react'
-import { Card, Button, Icon, Image } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
+import codenamesImage from '../dist/img/codenames\ guess.png'
 
 const ProjectCard = (props) => {
 
-    let {name, description, url, imgSource} = props.info
+    let {name, description, url, img} = props.info
+
+    let imgSource = {
+        "codenames": codenamesImage,
+    }
 
     return (
         <div className="item">
             <a href="#">
-                {imgSource? <img src={require(imgSource)} alt={name}></img> : null }
+                {img? <img src={imgSource[url]} alt={name} /> : null }
             </a>
             <a href="#" className="btn-light">
                 <Icon name='eye'/> Project {name}

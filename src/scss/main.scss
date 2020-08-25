@@ -23,9 +23,11 @@ body {
 #root > div.App {
     height: 100%;
     margin: 0;
+    min-height: 100%;
 
     &.bg-image{
         height: 100%;
+        min-height: 100%;
     }
 }
 
@@ -42,15 +44,21 @@ h3 {
     }
 
     &.sm-heading {
+
         margin-bottom: 2rem;
         margin-right: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        background: rgba($tertiary-color, 0.5); 
+
+        //displays grey background for landing page, otherwise blue 
+        &.landing {
+            background: rgba(lighten($primary-color, 2), 0.5);
+        }
     }
 
     &.sub-heading {
         text-align: right;
-        margin-top: -2rem;
+        margin-top: -2.5rem;
         margin-left: 2rem;
         padding: 0.2rem 1rem;
         background: rgba($tertiary-color, 0.5);
@@ -75,9 +83,10 @@ header {
 
 main {
     padding: 4rem;
-    // height: 100%;
-    margin-bottom: -($footer-height);
-    // min-height: calc(100vh - $footer-height);
+    height: 100% - $footer-height; //remove this to keep non-sticky footer behavior
+    //note: 100% wasn't working like it should. This works due to position absolute @background
+    //footer has negative margin to allow for this
+    min-height: 100%;
 
     .icons {
         margin-top: 1rem;
@@ -260,9 +269,10 @@ main {
 #main-footer {
     text-align: center;
     padding: 1rem;
-    background: darken($primary-color, 10);
+    background: darken($tertiary-color, 10);
     color: set-text-color($primary-color);
     height: $footer-height;
+    margin-top: -$footer-height;
 }
 
 @import 'mobile';

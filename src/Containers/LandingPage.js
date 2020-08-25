@@ -11,7 +11,7 @@ const LandingPage = () => {
             <h1 className="lg-heading">
                 John-Louis <span className="text-secondary">Rumingan</span>
             </h1>
-            <h2 className="sm-heading">
+            <h2 className="sm-heading landing">
                 Web Developer | Programmer | Designer | Artist
             </h2>
             <h2 className="sub-heading">
