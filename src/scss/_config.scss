@@ -1,6 +1,6 @@
-$primary-color: #444;
+$primary-color: rgb(85, 85, 85);
 $secondary-color: hotpink;
-$tertiary-color: blue;
+$tertiary-color: rgb(2, 95, 218);
 $show-home-image: true;
 $home-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg");
 $background-opacity: 0.9;
@@ -36,7 +36,7 @@ $footer-height: 60px; // used in _mobile and main
     }
 }
 
-// set text color
+// set text color depending on background color 
 @function set-text-color($color){
     @if(lightness($color) > 40){
         @return #444;

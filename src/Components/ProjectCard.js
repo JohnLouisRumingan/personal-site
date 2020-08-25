@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     return (
         <div className="item">
             <a href="#">
-                <img src={imgSource} alt={name}></img>
+                {imgSource? <img src={require(imgSource)} alt={name}></img> : null }
             </a>
             <a href="#" className="btn-light">
                 <Icon name='eye'/> Project {name}
