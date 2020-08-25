@@ -19,12 +19,12 @@ const projectList = [
         image: "codenames",
         description: "A browser version of a popular board game called Codenames designed by Vlaada Chvatil. This game was designed on the front end using vanilla Javascript and is supported by a backend API using Ruby/Rails with a Postgres db.",
     },
-    {
-        name: "TIKR",
-        url: "https://github.com/JohnLouisRumingan/tikr_frontend", 
-        image: "",
-        description: "TIKR is a small stock portfolio platform with historical trading data. Due to API limitations, historical data is limited but app can scale with more companies. Users can view stock details including historical stock data and add or remove them from their portolio. Built with React.js and supported by a backend API using Ruby/Rails with a Postgres db.",
-    },
+    // {
+    //     name: "TIKR",
+    //     url: "https://github.com/JohnLouisRumingan/tikr_frontend", 
+    //     image: "",
+    //     description: "TIKR is a small stock portfolio platform with historical trading data. Due to API limitations, historical data is limited but app can scale with more companies. Users can view stock details including historical stock data and add or remove them from their portolio. Built with React.js and supported by a backend API using Ruby/Rails with a Postgres db.",
+    // },
 ]
 
 export { projectList };
