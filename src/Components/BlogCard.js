@@ -10,7 +10,7 @@ const BlogCard = (props) => {
             e.preventDefault();
             window.open(url);}}>
             <div>
-                <span class="text-secondary">{title}</span>  - {description}
+                <span className="text-secondary">{title}</span>  - {description}
             </div>
         </a>
     )

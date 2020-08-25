@@ -7,13 +7,13 @@ const BlogContainer = (props) => {
     return (
         <main id="blog">
             <h1 className="lg-heading">
-                Technical <span class="text-secondary">Blog</span>
+                Technical <span className="text-secondary">Blog</span>
             </h1>
             <h2 className="sm-heading">
                 Tips and musings
             </h2>
             <div className="boxes">
-                {props.blogs? props.blogs.map(blog => <BlogCard info={blog}/>) : null }
+                {props.blogs? props.blogs.map(blog => <BlogCard info={blog} key={blog.url}/>) : null }
             </div>
         </main>
     )
