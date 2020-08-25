@@ -7,13 +7,13 @@ const ProjectContainer = (props) => {
     return (
         <main id="work">
             <h1 className="lg-heading">
-                My <span class="text-secondary">Work</span>
+                My <span className="text-secondary">Work</span>
             </h1>
             <h2 className="sm-heading">
                 Some projects I've made
             </h2>
             <div className="projects">
-                {props.projects? props.projects.map(project => <ProjectCard info={project}/>) : null }
+                {props.projects? props.projects.map(project => <ProjectCard info={project} key={project.url}/>) : null }
             </div>
         </main>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
-import codenamesImage from '../dist/img/codenames\ guess.png'
+import codenamesImage from '../dist/img/codenames-small.png'
 
 const ProjectCard = (props) => {
 
@@ -10,10 +10,12 @@ const ProjectCard = (props) => {
         "codenames": codenamesImage,
     }
 
+    console.log("codenames")
+
     return (
         <div className="item">
             <a href="#">
-                {img? <img src={imgSource[url]} alt={name} /> : null }
+                {img? <img src={imgSource[img]} alt={name} /> : null }
             </a>
             <a href="#" className="btn-light">
                 <Icon name='eye'/> Project {name}

@@ -1,5 +1,4 @@
 // import pokemonTrader from '../dist/img/pokemon\ trader.jpg'
-import codenamesImage from '../dist/img/codenames\ guess.png'
 
 const projectList = [
     // {
@@ -16,8 +15,8 @@ const projectList = [
     // },
     {
         name: "Codenames",
-        url: "codenames",
-        image: "../dist/img/codenames guess.png",
+        url: "https://github.com/JohnLouisRumingan/codenames_frontend",
+        image: "codenames",
         description: "A browser version of a popular board game called Codenames designed by Vlaada Chvatil. This game was designed on the front end using vanilla Javascript and is supported by a backend API using Ruby/Rails with a Postgres db.",
     },
     // {
