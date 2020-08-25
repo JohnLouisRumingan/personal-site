@@ -5,13 +5,21 @@ function drawerClickHandler(){
 }
 
 function backdropClick(){
-    return {type: "CLOSE_DRAWER"}
+    return {type: "SWITCH_BACKDROP"}
 }
 
 function navigateSite(site){
     return{type: "NAVIGATE_SITE", site}
 }
 
+function projectClick(){
+    return {type: "SWITCH_BACKDROP"}
+}
+
+// function projectClick(){
+//     return {type: }
+// }
+
 export {
-    drawerClickHandler, backdropClick, navigateSite,
+    drawerClickHandler, backdropClick, navigateSite, projectClick,
 };

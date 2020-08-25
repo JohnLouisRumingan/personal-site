@@ -11,17 +11,24 @@ import ArtContainer from './Containers/ArtContainer';
 import ProjectContainer from './Containers/ProjectContainer';
 import Copyright from './Containers/Copyright';
 import BlogContainer from './Containers/BlogContainer';
+import Backdrop from './Components/Backdrop/Backdrop';
 // removed Redirect and withRouter from react-router-dom import 
 
 class App extends React.Component {
 
   render(){
 
+    let backdrop;
+      if (this.props.backdrop){
+        backdrop = <Backdrop />
+      }
+
     return (
       <div className={this.props.navigation === "/personal-site" ? "App bg-image" : "App"} style={{height: '100%'}} >
         <header>
           <DrawerToggleButton />
           <SideDrawer />
+          {backdrop}
         </header>
         <Switch>
           <Route exact path='/about' render={() => <About />}/>
@@ -41,6 +48,8 @@ const mapStateToProps = (state) => {
    return {
     sideDrawerOpen: state.sideDrawerOpen,
     navigation: state.navigationPage,
+    projectDetails: state.projectDetail,
+    backdrop: state.backdrop,
    }
 }
 

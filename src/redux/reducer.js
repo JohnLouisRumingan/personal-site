@@ -4,6 +4,8 @@ import {blogPosts} from './_blogs'
 
 let initialState = {
     sideDrawerOpen: false,
+    projectDetail: false,
+    backdrop: false, 
     projectList,
     blogPosts,
     navigationPage: "/personal-site"
@@ -15,6 +17,26 @@ const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
             return !state;
         case "CLOSE_DRAWER":
             return false;
+        default:
+            return state;
+    }
+}
+
+const projectDetailReducer = (state=initialState.projectDetail, action) => {
+    switch(action.type){
+        case "CLOSE_PROJECT_DETAILS":
+            return false;
+        case "OPEN_PROJECT_DETAILS":
+            return true;
+        default:
+            return state;
+    }
+}
+
+const backdropReducer = (state=initialState.backdrop, action) => {
+    switch(action.type){
+        case "SWITCH_BACKDROP":
+            return !state;
         default:
             return state;
     }
@@ -45,6 +67,8 @@ const navigationReducer = (state=initialState.navigationPage, action) => {
 
 const rootReducer = combineReducers({
     sideDrawerOpen: drawerReducer,
+    projectDetail: projectDetailReducer,
+    backdrop: backdropReducer,
     projectList: projectReducer,
     blogPosts: blogReducer,
     navigationPage: navigationReducer,

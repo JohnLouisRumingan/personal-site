@@ -3,6 +3,8 @@ import { Icon } from 'semantic-ui-react'
 import codenamesImage from '../dist/img/codenames-small.png'
 import bgImage from '../dist/img/bg-small.png'
 import poketraderImage from '../dist/img/poketrader-small.png'
+import { connect } from 'react-redux'
+import { projectClick } from '../redux/actions'
 
 const ProjectCard = (props) => {
 
@@ -16,7 +18,9 @@ const ProjectCard = (props) => {
 
     return (
         <div className="item">
-            <a href="#">
+            <a href="#" onClick={() => {
+                props.clickHandler()
+            }}>
                 <img src={imgSource[image]} alt={name} />
             </a>
             {/* <a href="#" className="btn-light">
@@ -34,4 +38,11 @@ const ProjectCard = (props) => {
     )
 }
 
-export default ProjectCard
+const mapDispatchToProps = (dispatch) => {
+
+    return {
+        clickHandler: () => dispatch(projectClick())
+    }
+}
+
+export default connect(null, mapDispatchToProps)(ProjectCard);
