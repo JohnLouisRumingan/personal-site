@@ -105,6 +105,8 @@ main {
         margin: auto;
         border-radius: 50%;
         border: $secondary-color 3px solid;
+        max-height: 100%;
+        max-width: 100%;
     }
     
     .bio {
@@ -196,7 +198,7 @@ main {
     overflow: none;
 
     div {
-        font-size: 2rem;
+        font-size: 3rem;
         border: 3px #fff solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;

@@ -93,7 +93,7 @@ $nav-items: 4;
             width: 250px;
             height: 250px;
             background: $portrait-url;
-            background-size: contain; //play around with this for portrait, still not quite right
+            background-size: cover; //cover working for both large and small pfp
             background-repeat: no-repeat;
             border-radius: 50%;
             border: solid 3px $secondary-color;

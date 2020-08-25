@@ -1,4 +1,5 @@
 import React from 'react'
+import pfp from '../dist/img/pfp\ portfolio.jpeg'
 
 
 const StoryContainer = () => {
@@ -12,7 +13,7 @@ const StoryContainer = () => {
                 Some things about me
             </h2>
             <div className="about-info">
-                <img src="" alt="Picture of John-Louis Rumingan" className="bio-image"/>
+                <img src={pfp} alt="Picture of John-Louis Rumingan" className="bio-image"/>
                 <div className="bio">
                     <h3 className="text-secondary">Bio</h3>
                     <p>

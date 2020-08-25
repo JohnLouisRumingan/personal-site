@@ -57,8 +57,8 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg");
-      background-size: contain;
+      background: url("../img/pfp portfolio.jpeg");
+      background-size: cover;
       background-repeat: no-repeat;
       border-radius: 50%;
       border: solid 3px hotpink; }
@@ -178,7 +178,9 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: hotpink 3px solid; }
+    border: hotpink 3px solid;
+    max-height: 100%;
+    max-width: 100%; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -237,7 +239,7 @@ main {
   margin-top: 1rem;
   overflow: none; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 3rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem; }
@@ -307,7 +309,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg");
+      background: url("../img/pfp portfolio.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 150px;
