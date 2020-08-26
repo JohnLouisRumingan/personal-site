@@ -24,10 +24,8 @@ const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
 
 const projectDetailReducer = (state=initialState.projectDetail, action) => {
     switch(action.type){
-        case "CLOSE_PROJECT_DETAILS":
-            return false;
-        case "OPEN_PROJECT_DETAILS":
-            return true;
+        case "CHANGE_DETAILS":
+            return action.payload;
         default:
             return state;
     }

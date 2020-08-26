@@ -12,14 +12,14 @@ function navigateSite(site){
     return{type: "NAVIGATE_SITE", site}
 }
 
-function projectClick(){
+function activateBackdrop(){
     return {type: "SWITCH_BACKDROP"}
 }
 
-// function projectClick(){
-//     return {type: }
-// }
+function projectClick(details){
+    return {type: "CHANGE_DETAILS", payload: details}
+}
 
 export {
-    drawerClickHandler, backdropClick, navigateSite, projectClick,
+    drawerClickHandler, backdropClick, navigateSite, activateBackdrop, projectClick,
 };

@@ -208,6 +208,39 @@ main {
     }
 }
 
+// project details
+.project-detail {
+    // top: 20vh;
+    // left: 10vh;
+    // height: 60vh;
+    // width: 50vh;
+    // background: rgba($primary-color, 0.9);
+    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 101;
+    top: 20vh;
+    left:20%;
+    padding: 2rem;
+    margin: 2rem;
+    border: 5px #fff solid;
+    background: rgba($primary-color, 0.9);
+}
+
+// backdrop
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
 // blogs
 .boxes {
     display: flex;

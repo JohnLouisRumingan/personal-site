@@ -4,11 +4,12 @@ import codenamesImage from '../dist/img/codenames-small.png'
 import bgImage from '../dist/img/bg-small.png'
 import poketraderImage from '../dist/img/poketrader-small.png'
 import { connect } from 'react-redux'
-import { projectClick } from '../redux/actions'
+import { activateBackdrop, projectClick } from '../redux/actions'
 
 const ProjectCard = (props) => {
 
-    let {name, description, url, image} = props.info
+    let {name, url, image} = props.info
+    // removed description from destructuring, still need it for project detail component
 
     let imgSource = {
         "codenames": codenamesImage,
@@ -19,15 +20,15 @@ const ProjectCard = (props) => {
     return (
         <div className="item">
             <a href="#" onClick={() => {
-                props.clickHandler()
+                props.clickHandler(props.info)
             }}>
                 <img src={imgSource[image]} alt={name} />
             </a>
             {/* <a href="#" className="btn-light">
-            </a> */}
+            </a> 
             <span className="btn-light">
-                {/* <Icon name='eye'/> */}Project {name} 
-            </span>
+                <Icon name='eye'/> Project {name} 
+            </span>*/}
             <a href={url} onClick={(e) => {
                         e.preventDefault();
                         window.open(url);
@@ -41,7 +42,10 @@ const ProjectCard = (props) => {
 const mapDispatchToProps = (dispatch) => {
 
     return {
-        clickHandler: () => dispatch(projectClick())
+        clickHandler: (details) => {
+            dispatch(activateBackdrop())
+            dispatch(projectClick(details))
+        }
     }
 }
 
