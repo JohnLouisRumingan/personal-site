@@ -5,13 +5,13 @@ const projectList = [
         name: "BoredGamr",
         url: "https://github.com/JohnLouisRumingan/bored_gamer_frontend",
         image: "boardgame",
-        description: 'Welcome to Bored Gamer, where you can explore a selection of board games, save your favorites or add them to your collection. You can create events, join events, and see who is bringing what game to the party! This app uses the API from Board Game Atlas to render detailed game info. Built with React.js and Redux is supported by a backend API using Ruby/Rails with a Postgres db.',
+        description: 'Welcome to Bored Gamer, where you can explore a selection of board games, save your favorites or add them to your collection. You can create events, join events, and see who is bringing what game to the party! This app uses the API from Board Game Atlas to render detailed game info. Built with React.js and Redux for the front end. Integrates with a backend framework that uses Ruby/Rails with a Postgres db.',
     },
     {
         name: "Pokemon Trader",
         url: "https://github.com/JohnLouisRumingan/pokemon_trader-1",
         image: "pokemon",
-        description: "POKEMON TRADER An app where users can log in, open packs of pokemon cards, offer trades with other users. This app is built on Ruby on Rails HTML.ERB with CSS styling and uses Postgres db.",
+        description: "An app where users can log in, open packs of pokemon cards, offer trades with other users. This app is built on Ruby on Rails, HTML.ERB with CSS styling and uses Postgres db.",
     },
     {
         name: "Codenames",
