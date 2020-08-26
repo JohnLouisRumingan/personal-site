@@ -40,6 +40,9 @@ const SideDrawer = (props) => {
                 <li className={toggleShowClass("nav-item", "/blog")}><Link to='/blog' className="nav-link" onClick={() => props.navigate("/blog")}>
                     <Icon name="pencil" />Technical Blog</Link>
                 </li>
+                <li className={toggleShowClass("nav-item", "/contact")}><Link to='/contact' className="nav-link" onClick={() => props.navigate("/contact")}>
+                    <Icon name="mail outline" />Contact Me</Link>
+                </li>
                 <li className={toggleShowClass("nav-item", "/about")}><Link to='/about' className="nav-link" onClick={() => props.navigate("/about")}>
                     <Icon name="help" />About</Link>
                 </li>

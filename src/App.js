@@ -13,6 +13,7 @@ import Copyright from './Containers/Copyright';
 import BlogContainer from './Containers/BlogContainer';
 import Backdrop from './Components/Backdrop/Backdrop';
 import ProjectDetail from './Components/ProjectDetail';
+import ContactContainer from './Containers/ContactContainer';
 // removed Redirect and withRouter from react-router-dom import 
 
 class App extends React.Component {
@@ -39,6 +40,7 @@ class App extends React.Component {
           <Route exact path='/about' render={() => <About />}/>
           <Route exact path ='/art' render={() => <ArtContainer />}/>
           <Route exact path='/blog' render={() => <BlogContainer />}/>
+          <Route exact path='/contact' render={() => <ContactContainer />}/>
           <Route exact path='/personal-site' render={() => <LandingPage />}/>
           <Route exact path='/projects' render={() => <ProjectContainer />}/>
           <Route exact path='/story' render={() => <StoryContainer />}/>
