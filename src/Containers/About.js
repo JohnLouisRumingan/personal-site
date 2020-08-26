@@ -19,6 +19,9 @@ const About = () => {
                 Copy/pasting URLs aside from https://johnlouisrumingan.github.io/personal-site/ will not work - all routing is done client-side. 
                 </p>
                 <p>
+                    Updated 2020.8.25: more responsive site! Still uses React but now with SASS
+                </p>
+                <p>
                     Background photograph by Kevin Ku.
                 </p>
             </div>
