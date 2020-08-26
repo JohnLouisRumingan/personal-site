@@ -1,17 +1,25 @@
 import React from 'react'
 import { Button, Form } from 'semantic-ui-react'
+import ContactCard from '../Components/ContactCard'
 
 const Contact = () => {
 
     return (
         <main id="contact">  
             <h1 className="lg-heading contact">
-                Contact <span className="text-seconary">Me</span> 
+                Contact <span className="text-secondary">Me</span> 
             </h1>
             <h2 className="sm-heading">
-                Get In Touch
+                Get in touch 
             </h2>
-
+            <h3>
+                <span className="text-secondary">I'm on these platforms:</span>
+            </h3>
+            <ContactCard align="left"/>
+            <br></br>
+            <h3>
+                <span className="text-secondary">Or you can contact me here:</span>
+            </h3>
             <Form
             action="https://formspree.io/meqrwylr"
             method="POST">

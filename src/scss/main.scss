@@ -91,7 +91,13 @@ main {
 
     .icons {
         margin-top: 1rem;
-        text-align: right;
+
+        &.right {
+            text-align: right;
+        }
+        &.left {
+            text-align: left;
+        }
         
         a {
             padding: 0.4rem;

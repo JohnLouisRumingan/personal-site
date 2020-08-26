@@ -173,8 +173,11 @@ main {
   padding: 4rem;
   min-height: 100%; }
   main .icons {
-    margin-top: 1rem;
-    text-align: right; }
+    margin-top: 1rem; }
+    main .icons.right {
+      text-align: right; }
+    main .icons.left {
+      text-align: left; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
