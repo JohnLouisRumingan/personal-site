@@ -2,6 +2,11 @@
 
 const blogPosts = [
     {
+        title: "Updating My Portfolio Site",
+        url: "https://medium.com/@john.louis.rumingan/updating-my-portfolio-site-89c7ae41cfa6", 
+        description: "Technical details about the recent rehaul to my portfolio"
+    },
+    {
         title: "Node.js and Task Runners",
         url: "https://medium.com/@john.louis.rumingan/node-js-and-task-runners-d53239780bd1",
         description: "A brief overview of node.js and the purpose of task runners"
