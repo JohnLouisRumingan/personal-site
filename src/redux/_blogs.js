@@ -2,6 +2,11 @@
 
 const blogPosts = [
     {
+        title: "How to add a second remote",
+        url: "https://medium.com/@john.louis.rumingan/how-to-add-a-second-remote-to-a-local-repository-7d0e36f18d58",
+        description: "Short how-to about adding remotes to local repository for certain use cases"
+    },
+    {
         title: "Updating My Portfolio Site",
         url: "https://medium.com/@john.louis.rumingan/updating-my-portfolio-site-89c7ae41cfa6", 
         description: "Technical details about the recent rehaul to my portfolio"
