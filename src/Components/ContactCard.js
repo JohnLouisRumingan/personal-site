@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
+import { connect } from 'react-redux'
 
 const ContactCard = (props) => {
 
@@ -27,4 +28,10 @@ const ContactCard = (props) => {
     )
 }
 
-export default ContactCard
+const mapStateToProps = (state) => {
+    return {
+        contacts: state.contactDetails
+    }
+}
+
+export default connect(mapStateToProps)(ContactCard)

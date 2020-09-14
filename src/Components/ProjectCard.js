@@ -19,16 +19,11 @@ const ProjectCard = (props) => {
 
     return (
         <div className="item">
-            <a href="#" onClick={() => {
+            <button onClick={() => {
                 props.clickHandler(props.info)
             }}>
                 <img src={imgSource[image]} alt={name} />
-            </a>
-            {/* <a href="#" className="btn-light">
-            </a> 
-            <span className="btn-light">
-                <Icon name='eye'/> Project {name} 
-            </span>*/}
+            </button>
             <a href={url} onClick={(e) => {
                         e.preventDefault();
                         window.open(url);

@@ -29,7 +29,7 @@ class App extends React.Component {
 
 
     return (
-      <div className={this.props.navigation === "/personal-site" ? "App bg-image" : "App"} style={{height: '100%'}} >
+      <div className={this.props.navigation === "/" ? "App bg-image" : "App"} style={{height: '100%'}} >
         <header>
           <DrawerToggleButton />
           <SideDrawer />
@@ -41,11 +41,11 @@ class App extends React.Component {
           <Route exact path ='/art' render={() => <ArtContainer />}/>
           <Route exact path='/blog' render={() => <BlogContainer />}/>
           <Route exact path='/contact' render={() => <ContactContainer />}/>
-          <Route exact path='/personal-site' render={() => <LandingPage />}/>
           <Route exact path='/projects' render={() => <ProjectContainer />}/>
           <Route exact path='/story' render={() => <StoryContainer />}/>
+          <Route exact path='/' render={() => <LandingPage />}/>
         </Switch>
-        {this.props.navigation === "/personal-site" ? null : <Copyright />}
+        {this.props.navigation === "/" ? null : <Copyright />}
       </div>
     );
   }

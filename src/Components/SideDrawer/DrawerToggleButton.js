@@ -1,8 +1,6 @@
 import React from 'react';
 import {drawerClickHandler} from '../../redux/actions'
 import { connect } from 'react-redux'
-// import './DrawerToggleButton.css';
-// import '../../dist/css/main.css'
 
 const drawerToggleButton = props => {
 

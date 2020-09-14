@@ -1,5 +1,4 @@
 import React from 'react'
-import { Icon } from 'semantic-ui-react'
 import ContactCard from '../Components/ContactCard'
 
 const LandingPage = () => {

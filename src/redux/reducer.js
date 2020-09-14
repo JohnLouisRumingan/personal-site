@@ -1,6 +1,7 @@
 import {combineReducers } from 'redux';
 import {projectList} from './_projects'
 import {blogPosts} from './_blogs'
+import {contactDetails} from './_contacts'
 
 let initialState = {
     sideDrawerOpen: false,
@@ -8,7 +9,8 @@ let initialState = {
     backdrop: false, 
     projectList,
     blogPosts,
-    navigationPage: "/personal-site"
+    contactDetails,
+    navigationPage: "/"
 }
 
 const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
@@ -63,6 +65,13 @@ const navigationReducer = (state=initialState.navigationPage, action) => {
     }
 } 
 
+const contactReducer = (state=initialState.contactDetails, action) => {
+    switch(action.type){
+        default:
+            return state;
+    }
+}
+
 const rootReducer = combineReducers({
     sideDrawerOpen: drawerReducer,
     projectDetail: projectDetailReducer,
@@ -70,6 +79,7 @@ const rootReducer = combineReducers({
     projectList: projectReducer,
     blogPosts: blogReducer,
     navigationPage: navigationReducer,
+    contactDetails: contactReducer
 })
 
 export default rootReducer
