@@ -16,7 +16,9 @@ const About = () => {
                 <p>
                 Page built using the above technlogies.
                 Please note: This website is a single-page app using react-router-dom components.
-                Copy/pasting URLs aside from https://johnlouisrumingan.github.io/personal-site/ will not work - all routing is done client-side. 
+                </p>
+                <p>
+                    Updated 2020.9.14: Changed BrowserRouter to HashRouter. Visitors can now correctly copy-paste the URL with #/route.
                 </p>
                 <p>
                     Updated 2020.8.25: more responsive site! Still uses React but now with SASS
