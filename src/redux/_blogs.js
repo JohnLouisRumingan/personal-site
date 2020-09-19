@@ -2,6 +2,11 @@
 
 const blogPosts = [
     {
+        title: "Throwing, Catching, and Unforced Errors",
+        url: "https://medium.com/@john.louis.rumingan/throwing-catching-and-unforced-errors-f8f70960d3b9",
+        description: "Looking at past projects more critically"
+    },
+    {
         title: "How to add a second remote",
         url: "https://medium.com/@john.louis.rumingan/how-to-add-a-second-remote-to-a-local-repository-7d0e36f18d58",
         description: "Short how-to about adding remotes to local repository for certain use cases"
