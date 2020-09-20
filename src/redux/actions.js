@@ -1,23 +1,24 @@
 // place all action creators here
+import * as types from './actionTypes'
 
 function drawerClickHandler(){
-    return{type:"SWITCH_DRAWER"}
+    return {type: types.SWITCH_DRAWER}
 }
 
 function backdropClick(){
-    return {type: "SWITCH_BACKDROP"}
+    return {type: types.SWITCH_BACKDROP}
 }
 
 function navigateSite(site){
-    return{type: "NAVIGATE_SITE", site}
+    return{type: types.NAVIGATE_SITE, site}
 }
 
 function activateBackdrop(){
-    return {type: "SWITCH_BACKDROP"}
+    return {type: types.SWITCH_BACKDROP}
 }
 
 function projectClick(details){
-    return {type: "CHANGE_DETAILS", payload: details}
+    return {type: types.CHANGE_PROJECT_DETAILS, payload: details}
 }
 
 export {

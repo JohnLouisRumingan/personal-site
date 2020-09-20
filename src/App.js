@@ -7,7 +7,6 @@ import { connect } from 'react-redux'
 import About from './Containers/About'
 import LandingPage from './Containers/LandingPage'
 import StoryContainer from './Containers/StoryContainer';
-import ArtContainer from './Containers/ArtContainer';
 import ProjectContainer from './Containers/ProjectContainer';
 import Copyright from './Containers/Copyright';
 import BlogContainer from './Containers/BlogContainer';
@@ -29,7 +28,7 @@ class App extends React.Component {
 
 
     return (
-      <div className={this.props.navigation === "/" ? "App bg-image" : "App"} style={{height: '100%'}} >
+      <div className={this.props.navigation === "/" ? "App bg-image" : "App"} >
         <header>
           <DrawerToggleButton />
           <SideDrawer />
@@ -38,7 +37,6 @@ class App extends React.Component {
         </header>
         <Switch>
           <Route exact path='/about' render={() => <About />}/>
-          <Route exact path ='/art' render={() => <ArtContainer />}/>
           <Route exact path='/blog' render={() => <BlogContainer />}/>
           <Route exact path='/contact' render={() => <ContactContainer />}/>
           <Route exact path='/projects' render={() => <ProjectContainer />}/>

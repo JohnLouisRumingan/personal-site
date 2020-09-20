@@ -83,9 +83,6 @@ header {
 
 main {
     padding: 4rem;
-    // height: 100% - $footer-height;
-    //note: 100% wasn't working like it should. This works due to position absolute @background
-    //footer has negative margin to allow for this.
     // min-height working with negative margin top for footer.
     min-height: 100%;
 

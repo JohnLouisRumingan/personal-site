@@ -2,6 +2,7 @@ import {combineReducers } from 'redux';
 import {projectList} from './_projects'
 import {blogPosts} from './_blogs'
 import {contactDetails} from './_contacts'
+import * as types from './actionTypes'
 
 let initialState = {
     sideDrawerOpen: false,
@@ -15,10 +16,8 @@ let initialState = {
 
 const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
     switch(action.type){
-        case "SWITCH_DRAWER":
+        case types.SWITCH_DRAWER:
             return !state;
-        case "CLOSE_DRAWER":
-            return false;
         default:
             return state;
     }
@@ -26,7 +25,7 @@ const drawerReducer = (state=initialState.sideDrawerOpen, action) => {
 
 const projectDetailReducer = (state=initialState.projectDetail, action) => {
     switch(action.type){
-        case "CHANGE_DETAILS":
+        case types.CHANGE_PROJECT_DETAILS:
             return action.payload;
         default:
             return state;
@@ -35,7 +34,7 @@ const projectDetailReducer = (state=initialState.projectDetail, action) => {
 
 const backdropReducer = (state=initialState.backdrop, action) => {
     switch(action.type){
-        case "SWITCH_BACKDROP":
+        case types.SWITCH_BACKDROP:
             return !state;
         default:
             return state;
@@ -58,10 +57,10 @@ const blogReducer = (state=initialState.blogPosts, action) => {
 
 const navigationReducer = (state=initialState.navigationPage, action) => {
     switch(action.type){
-        case "NAVIGATE_SITE":
+        case types.NAVIGATE_SITE:
             return action.site;
         default: 
-        return state;
+            return state;
     }
 } 
 
