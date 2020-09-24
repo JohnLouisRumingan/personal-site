@@ -2,6 +2,11 @@
 
 const blogPosts = [
     {
+        title: "Gaining insight from writing tests",
+        url: "https://medium.com/@john.louis.rumingan/action-objects-and-reducers-when-writing-tests-lead-to-insights-2703df97ad4e?sk=e10cfd730365bc423918f9cc8dea7680",
+        description: "How writing tests help you understand your own code better"
+    },
+    {
         title: "Throwing, Catching, and Unforced Errors",
         url: "https://medium.com/@john.louis.rumingan/throwing-catching-and-unforced-errors-f8f70960d3b9",
         description: "Looking at past projects more critically"
