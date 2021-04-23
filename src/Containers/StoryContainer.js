@@ -17,9 +17,8 @@ const StoryContainer = () => {
                 <div className="bio">
                     <h3 className="text-secondary">Bio</h3>
                     <p>
-                    Full-stack web developer based in Washington, DC Metro Area. Passion for bringing people together 
-                    through code. Fluent in JavaScript, Ruby, HTML, and CSS. I enjoy finding solutions to difficult problems and 
-                    using technology to do it.
+                    Full-stack web developer based in Washington, DC Metro Area. 
+                    <br></br>I currently work for Citi creating customer-facing components in Angular.
                     </p>
                 </div>
                 <div className="job past-1">
@@ -39,33 +38,45 @@ const StoryContainer = () => {
                 <div className="job techstack-2">
                     <h3>Technology I know</h3>
                     <span className="text-secondary">Languages and Frameworks</span>
+                    {/* devicons from https://devicon.dev/ */}
                     <div className="icons-container">
                         <i className="devicon-javascript-plain colored"></i>
+                        <i class="devicon-angularjs-plain colored"></i>
                         <i className="devicon-react-original-wordmark colored"></i>
                         <i className="devicon-redux- colored"></i>
                         <i className="devicon-nodejs-plain-wordmark colored"></i>
-                        <i className="devicon-html5-plain-wordmark colored"></i>
                         <i className="devicon-css3-plain-wordmark colored"></i>
+                        <i className="devicon-html5-plain-wordmark colored"></i>
                         <i className="devicon-sass-original colored"></i>
-                        <img
-                            src="https://www.getdeveloper.net/wp-content/uploads/2018/02/semantic.png"
-                            alt="semantic ui logo"
-                            className="s-logo"
-                        />
+                        <i>
+                            <img
+                                src="https://www.getdeveloper.net/wp-content/uploads/2018/02/semantic.png"
+                                alt="semantic ui logo"
+                                className="s-logo"
+                            />
+                        </i>
                         <i className="devicon-ruby-plain-wordmark colored"></i>
                         <i className="devicon-rails-plain-wordmark colored"></i>
                         <i className="devicon-postgresql-plain-wordmark colored"></i>
                         <i className="devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicon-jenkins-plain"></i>
+                        <i class="devicon-bitbucket-original-wordmark colored"></i>
                         <i className="devicon-linux-plain colored"></i>
                     </div>
                 </div>
                 <div className="job student-3">
                     <h3>Full-Stack Developer</h3>
+                        <span className="text-secondary">Citi</span>
+                        <ul>
+                            <li>Developed Angular components for customer-facing functionalities</li>
+                            <li>Utilize Jenkins for CI/CD in various test and production environments</li>
+                        </ul>
+                        <br></br>
                         <span className="text-secondary">Flatiron School</span>
                         <ul>
-                        <li>Finished a 15-week immersive program for software engineering</li>
-                        <li>Experience in paired program, SOLID principles, and agile best practices</li>
-                        <li>Wrote and presented blog articles about the use and development of technology</li>
+                            <li>Finished a 15-week immersive program for software engineering</li>
+                            <li>Experience in paired program, SOLID principles, and agile best practices</li>
+                            <li>Wrote and presented blog articles about the use and development of technology</li>
                         </ul>
                 </div>
             </div>
